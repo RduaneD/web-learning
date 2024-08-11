@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi - Platform Kursus</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Base styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #00c6ff, #0072ff); /* Background gradient */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #384453;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1000;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            margin: 20px;
+        }
+
+        main {
+            width: 100%;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #0072ff;
+            color: #fff;
+            text-align: center;
+            padding: 15px 20px;
+            position: relative;
+            bottom: 0;
+        }
+
+        h2 {
+            color: #0072ff;
+            margin-bottom: 20px;
+        }
+
+        .material-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .material-list li {
+            background: #f9f9f9;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .material-list li:hover {
+            background: #eaeaea;
+            transform: translateY(-2px);
+        }
+
+        .material-list li h3 {
+            margin: 0;
+            color: #0072ff;
+        }
+
+        .material-list li p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Platform">
+            <h1>Platform Kursus</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="kursus.html">Kursus</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="pengaturan.html">Pengaturan</a></li>
+                <li><a href="logout.html">Keluar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <h2>Materi Kursus</h2>
+            <p>Berikut adalah daftar materi yang tersedia untuk kursus kami:</p>
+            <ul class="material-list">
+                <li>
+                    <h3>Pemrograman Web Dasar</h3>
+                    <p><strong>Deskripsi:</strong> Memperkenalkan konsep dasar HTML, CSS, dan JavaScript untuk membuat halaman web yang responsif.</p>
+                    <p><strong>Durasi:</strong> 4 minggu</p>
+                </li>
+                <li>
+                    <h3>Desain Grafis dengan Adobe Illustrator</h3>
+                    <p><strong>Deskripsi:</strong> Teknik desain grafis menggunakan Adobe Illustrator untuk membuat desain vector berkualitas tinggi.</p>
+                    <p><strong>Durasi:</strong> 6 minggu</p>
+                </li>
+                <li>
+                    <h3>Analisis Data dengan Python</h3>
+                    <p><strong>Deskripsi:</strong> Teknik analisis data menggunakan Python, termasuk pengolahan dan visualisasi data.</p>
+                    <p><strong>Durasi:</strong> 5 minggu</p>
+                </li>
+                <li>
+                    <h3>Pengembangan Aplikasi Mobile dengan Flutter</h3>
+                    <p><strong>Deskripsi:</strong> Membuat aplikasi mobile cross-platform menggunakan Flutter dengan fokus pada desain UI/UX.</p>
+                    <p><strong>Durasi:</strong> 7 minggu</p>
+                </li>
+                <li>
+                    <h3>Keamanan Siber untuk Pemula</h3>
+                    <p><strong>Deskripsi:</strong> Prinsip dasar keamanan siber untuk melindungi sistem dan mengidentifikasi ancaman keamanan.</p>
+                    <p><strong>Durasi:</strong> 4 minggu</p>
+                </li>
+                <li>
+                    <h3>Pengembangan Web Lanjutan dengan JavaScript</h3>
+                    <p><strong>Deskripsi:</strong> Teknik lanjutan pengembangan web menggunakan JavaScript, termasuk framework modern seperti React/Vue.js.</p>
+                    <p><strong>Durasi:</strong> 6 minggu</p>
+                </li>
+                <li>
+                    <h3>Manajemen Proyek Agile</h3>
+                    <p><strong>Deskripsi:</strong> Prinsip dan teknik manajemen proyek menggunakan metodologi Agile, termasuk Scrum dan Kanban.</p>
+                    <p><strong>Durasi:</strong> 5 minggu</p>
+                </li>
+                <li>
+                    <h3>Pemasaran Digital dan SEO</h3>
+                    <p><strong>Deskripsi:</strong> Teknik pemasaran digital dan optimasi mesin pencari (SEO) untuk meningkatkan visibilitas website.</p>
+                    <p><strong>Durasi:</strong> 4 minggu</p>
+                </li>
+                <li>
+                    <h3>Fotografi Digital dan Editing</h3>
+                    <p><strong>Deskripsi:</strong> Teknik dasar fotografi digital dan editing foto menggunakan Adobe Lightroom dan Photoshop.</p>
+                    <p><strong>Durasi:</strong> 6 minggu</p>
+                </li>
+                <li>
+                    <h3>Kepemimpinan dan Pengembangan Tim</h3>
+                    <p><strong>Deskripsi:</strong> Keterampilan kepemimpinan dan teknik pengembangan tim untuk memimpin tim secara efektif.</p>
+                    <p><strong>Durasi:</strong> 5 minggu</p>
+                </li>
+            </ul>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Platform Kursus Online. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaturan - Platform Kursus</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, h3, p, ul, li, input, select, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Base styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #00c6ff, #0072ff); /* Background gradient */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #161d24; /* Blue background */
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1000;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            margin: 20px;
+        }
+
+        main {
+            width: 100%;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #161d24;
+            color: #fff;
+            text-align: center;
+            padding: 15px 20px;
+            position: relative;
+            bottom: 0;
+        }
+
+        h2 {
+            color: #0072ff;
+            margin-bottom: 20px;
+        }
+
+        .settings-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .settings-form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .settings-form input, .settings-form select, .settings-form button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .settings-form button {
+            background: #0072ff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .settings-form button:hover {
+            background: #005bb5;
+        }
+
+        .settings-form .section {
+            margin-bottom: 30px;
+        }
+
+        .settings-form .section h3 {
+            margin-bottom: 10px;
+            color: #0072ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Platform">
+            <h1>Platform Kursus</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="kursus.html">Kursus</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="pengaturan.html">Pengaturan</a></li>
+                <li><a href="logout.html">Keluar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <h2>Pengaturan</h2>
+            <p>Ubah preferensi dan pengaturan platform Anda di sini:</p>
+
+            <form class="settings-form">
+                <div class="section">
+                    <h3>Informasi Akun</h3>
+                    <label for="username">Nama Pengguna</label>
+                    <input type="text" id="username" placeholder="Masukkan nama pengguna">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Masukkan alamat email">
+
+                    <label for="password">Kata Sandi</label>
+                    <input type="password" id="password" placeholder="Masukkan kata sandi baru">
+                </div>
+
+                <div class="section">
+                    <h3>Preferensi Notifikasi</h3>
+                    <label for="email-notifications">Notifikasi Email</label>
+                    <select id="email-notifications">
+                        <option value="enabled">Diaktifkan</option>
+                        <option value="disabled">Dinonaktifkan</option>
+                    </select>
+
+                    <label for="sms-notifications">Notifikasi SMS</label>
+                    <select id="sms-notifications">
+                        <option value="enabled">Diaktifkan</option>
+                        <option value="disabled">Dinonaktifkan</option>
+                    </select>
+                </div>
+
+                <div class="section">
+                    <h3>Pengaturan Tema</h3>
+                    <label for="theme">Pilih Tema</label>
+                    <select id="theme">
+                        <option value="light">Tema Terang</option>
+                        <option value="dark">Tema Gelap</option>
+                    </select>
+                </div>
+
+                <div class="section">
+                    <h3>Keamanan Akun</h3>
+                    <label for="two-factor-auth">Autentikasi Dua Faktor</label>
+                    <select id="two-factor-auth">
+                        <option value="enabled">Diaktifkan</option>
+                        <option value="disabled">Dinonaktifkan</option>
+                    </select>
+                </div>
+
+                <button type="submit">Simpan Pengaturan</button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Platform Kursus Online. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
